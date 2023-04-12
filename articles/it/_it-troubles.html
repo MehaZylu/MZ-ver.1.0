@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../styles/article.css">
+	<link rel="shortcut icon" href="../../images/page-logo.png" type="image/x-icon">
+	<title>Проблемы в вёрстке</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Проблемы в вёрстке</h1>
+		<h2>Изображения</h2>
+		<h3>Проблема</h3>
+		<img src="../../images/it/_it-troubles/example-1.1.png" alt="">
+		<p>
+			Проблема в том, что такой код (даже без любых стилей CSS, просто картинка в другом теге) добавляет дополнительное
+			пространство снизу родительского блока.
+		</p>
+		<img src="../../images/it/_it-troubles/example-1.png" alt="">
+		<p>
+			Можно заметить, что сама картинка уже "закончилась", но родительскому
+			блоку все равно снизу добавляется некоторое свободное пространство.
+		</p>
+		<h3>Решение</h3>
+		<p>
+			Картинка, по умолчанию, отображается как <b>строчный элемент</b>, на который влияет <b>высота строки</b>. Именно
+			высота строки ответственна за расстояние между div и img.
+		</p>
+		<p>Чтобы этого избежать нужно сделать картинку <b>блочным элементом</b>.</p>
+		<img src="../../images/it/_it-troubles/fix-1.png" alt="">
+	</div>
+</body>
+
+</html>
