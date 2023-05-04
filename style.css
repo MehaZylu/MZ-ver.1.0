@@ -54,7 +54,11 @@ a {
 	margin-top: 22px;
 
 	display: flex;
-	gap: 50px;
+	gap: 30px;
+}
+
+.menu__list {
+	min-width: 400px;
 }
 
 .menu__tittle {
@@ -77,4 +81,11 @@ a {
 .menu__link:hover {
 	color: #FB6D6C;
 	transition: all 0.2s;
+}
+
+.review {
+	margin-top: 10px;
+
+	max-width: 100%;
+	border-radius: 10px;
 }
